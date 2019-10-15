@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[简历]枫叶深秋-前端开发工程师</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 750px) {
+                    .switch {
+                        position: relative;
+                        display: inline-block !important;
+                        width: 60px;
+                        height: 34px;
+                    }
+
+                    .switch input {
+                        display: none;
+                    }
+
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 26px;
+                        width: 26px;
+                        left: 4px;
+                        bottom: 4px;
+                        background-color: white;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    input:checked+.slider {
+                        background-color: #1abc9c;
+                    }
+
+                    input:focus+.slider {
+                        box-shadow: 0 0 1px #1abc9c;
+                    }
+
+                    input:checked+.slider:before {
+                        -webkit-transform: translateX(26px);
+                        -ms-transform: translateX(26px);
+                        transform: translateX(26px);
+                    }
+
+                    .slider.round {
+                        border-radius: 34px;
+                    }
+
+                    .slider.round:before {
+                        border-radius: 50%;
+                    }
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/avatar.jpg" >
+                </section>
+
+                <h1 class="name">枫叶深秋</h1>
+                <h4 class="info-job">前端开发工程师 </h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>管锡宇 / 男 / 30岁</span>
+                    </li>
+                    <li>
+                        <label>计算机水平</label>
+                        <span>软考网络中级</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:15873161854" target="_blank">158-7316-1854</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="mailto:guanxiyu5@126.com" target="_blank">guanxiyu5@126.com</a>
+                    </li>
+                    <li>
+                        <label>个人主页</label>
+                        <a href="www.guanxiyu.top" target="_blank">www.guanxiyu.top/</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/guanxiyu" target="_blank">github.com/guanxiyu</a>
+                    </li>
+                    <li>
+                        <label>Gitee</label>
+                        <a href="https://gitee.com/fengyefa" target="_blank">gitee.com/fengyefa</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <label>HTML</label>
+                        <progress value="75" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>CSS</label>
+                        <progress value="75" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>JavaScript</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Vue</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>小程序</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr />
+                <img src="data:image/png;base64,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"
+                    style="width: 100%;" alt="">
+            </section>
+
+            <!-- 技术栈 -->
+            <div class="stack info-unit">
+                <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <label>前端</label>
+                        <span>jQuery、微信小程序、Vue</span>
+                    </li>
+                    <li>
+                        <label>后端</label>
+                        <span>MySQL、C#、PHP</span>
+                    </li>
+                    <li>
+                        <label>其他</label>
+                        <span>Git、SVN、Markdown</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            <span>湖南网络工程职业学院 - 计算机网络工程专业（大专）</span>
+                            <time>2008.9-2011.6</time>
+                        </h3>
+
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>工作经历</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[经历1]麦索美思广告有限公司－前端开发工程师</span>
+                            <time>2019.3 至 2019.4</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>参与公司微信公众号网页的修改和维护
+                            <li>参与公司H5活动页交互制作，使用技术css3、jQuery、CreateJS</li>
+                            <li>参与公司部分小程序页面制作，熟悉小程序页面开发</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历2]普亿特科技发展有限公司－前端开发工程师</span>
+                            <time>2018.9-2018.12</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>在职期间参与“会议互动”项目前端修改调试和开发工作（ionic app开发）。</li>
+                            <li>使用TweenMax、css3实现页面中需要动画效果</li>
+                            <li>完成大屏app "弹幕"功能实现，制作“设置”功能页面完成大屏单个模块功能显示与隐藏，如皮肤切换、弹幕播放、背景音乐播放、嘉宾介绍自动播放等</li>
+                            <li>使用css3动画优化“消息墙”动画显示、微信抽奖动画显示等</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历3]深圳市方直科技长沙分公司－前端开发工程师</span>
+                            <time>2016.12-2018.8</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>参与公司数学北师大项目框架开发、H5课件制作，北京版练习册H5课件制作等电子书项目</li>
+                            <li>参与公司创新技能比赛,所在小组荣获第一名，使用three.js,tween.js,TrackballControls.js</li>
+                            <li>在司期间参与公司技术储备Unit3D VR研发，完成语文学科类诗词展示</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历4]湖南微游寰亚有限公司－前端开发工程师</span>
+                            <time>2016.7-2016.9</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>负责前端h5游戏(白鹭egret)开发以及网页制作</li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历5]深圳市方直科技长沙分公司－多媒体开发工程师</span>
+                            <time>2013.3-2016.6</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>根据设计需求实现flash课件功能与制作</li>
+                            <li>根据产品升级需求完善flash电子书框架、研发框架新功能等</li>
+                            <li>与编辑、设计合作，完成电子书框架配置、多媒体课件以及资源整合、集成</li>
+                            <li>
+                                信息技术项目框架修改与框架功能能制作、仿真课件制作、资源整合集成
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历6]湖南蓝猫动漫公司有限公司－多媒体开发工程师</span>
+                            <time>2011.10-2013.3</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>在职期间通过visual studio2010工具对蓝猫智乐园网站的调试确保网站的正常运行，负责资源的更新保证网站资源与本地资源实时同步</li>
+                            <li>制作网站资源，通过Flash cs3.0软件用actionscript3.0制作flash 游戏绘本等资源，能够根据需求制作不同的绘本游戏</li>
+                            <li>将所做的成品在蓝猫平板客户端上测试，发现在pc与平板上存在的问题解决问题，达到正确运行确保资源在pc上与平板上运行一致</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>个人项目</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]Vue网易云音乐</span>
+                            <span class="link">
+                                <a href="http://www.guanxiyu.top/music/" target="_blank">Demo</a>
+                            </span>                           
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：vue-cli +vue-router + axios </li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]熟悉Vue 完成网页版网易云音乐基本功能
+                                <br />                              
+                               
+                        </ul>
+                    </li>                    
+
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价/期望</h2>
+                <hr />
+                <p>[喜欢逛资源分享网站或论坛搭建感兴趣的源码]<br>
+                        在工作上, 尊重领导、团结同事、认真负责，具有很好的团队合作精神，集体意识强。为人随和、易于沟通、能够快速地融入工作团队
+                </p>
+            </section>
+        </section>
+    </article>
+
+
+
+    
+
+    <!-- 侧栏 -->
+    <!-- <aside>
+        <ul>
+            <li>
+                <a href="https://gitee.com/itsay/resume" target="_blank">源代码</a>
+            </li>
+            <li>
+                <a href="http://if2er.com/" target="_blank">Blog</a>
+            </li>
+        </ul>
+    </aside> -->
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
